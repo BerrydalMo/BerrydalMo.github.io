@@ -1,0 +1,108 @@
+/* Add your CSS styles here */
+body {
+    font-family: Grotley, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(6, 6, 6);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    color: rgb(137, 188, 247);
+    border-bottom: 2px solid rgb(246, 248, 163);
+    transition: top 0.3s;
+}
+
+header.hidden {
+    top: -100px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex; /* Use flexbox to align items in the main container */
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Center items vertically */
+    padding: 200px 200px 20px;
+    text-align: center;
+}
+
+footer {
+    position: bottom;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid rgb(243, 199, 251);
+    transition: top 0.3s;
+   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Remove animation for the moving image */
+.scroll-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 100px; /* Add space between the image and the text */
+    border-radius: 20%; /* Make the image circular */
+    overflow: hidden; /* Hide overflow for a perfect circle */
+}
+
+/* Add styles for the smaller textbox */
+.textbox {
+    flex: 1;
+    text-align: middle;
+    width: 70%;
+    color: rgb(147, 146, 146); /* Set the text color to white */
+}
+
+.textbox p {
+    margin: 0;
+}
